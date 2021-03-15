@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<school>
+  <teacher section="English">
+    <name>Kamla hossen</name>
+    <age>23</age>
+    <gender>Male</gender>
+  </teacher>
+  <teacher section="Bangla">
+    <name>Abdur Rahaman</name>
+    <age>20</age>
+    <gender>Male</gender>
+  </teacher>
+  <teacher section="Ict">
+    <name>Hanifa banu</name>
+    <age>33</age>
+    <gender>Female</gender>
+  </teacher>
+  <teacher section="Islamic History">
+    <name>Jinat khan</name>
+    <age>50</age>
+    <gender>Female</gender>
+  </teacher>
+  <teacher section="Social Work">
+    <name>Bulbul</name>
+    <age>23</age>
+    <gender>Male</gender>
+  </teacher>
+  <teacher section="Ict">
+    <name>Sumona</name>
+    <age>21</age>
+    <gender>Female</gender>
+  </teacher>
+</school>

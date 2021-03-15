@@ -1,0 +1,44 @@
+﻿
+<!-- Of course, you need to open this file in Internet Explorer V10 without you can't show the result -->
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function allshow() {
+            var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+            xmlDoc.load("Teacher.xml");
+            var root = xmlDoc.documentElement;
+            var html = "";
+            for (var i = 0; i < root.childNodes.length; i++) {
+                var book = root.childNodes[i]
+                html += "<tr>" 
+                    + "<td>" + book.getAttribute("section") + "</td>"
+                     + "<td>" + book.childNodes[0].text + "</td>"
+                     + "<td>" + book.childNodes[1].text + "</td>"
+                     + "<td>" + book.childNodes[2].text + "</td>"
+                     + "</tr>"
+            }
+            document.getElementById("tblbody").innerHTML = html;
+        }
+    </script>
+</head>
+<body onload="allshow()">
+<marquee style="font-size:50xp">Of course, you need to open this file in Internet Explorer V10 without you can't show the result</marquee>
+    <div id="a">
+        <table cellpadding="10" border="1" cellspacing="5" >
+            <thead>
+                <tr style="background:aqua;">
+                    <th>Section</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody id="tblbody" style="background:red; color:white;"></tbody>
+        </table>
+    </div>
+</body>
+</html>
